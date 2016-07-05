@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aaron Gaffney</title>
+    <link>http://replace-this-with-your-hugo-site.com/</link>
+    <description>Recent content on Aaron Gaffney</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jul 2016 15:15:05 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>aaron</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/aaron/</link>
+      <pubDate>Tue, 05 Jul 2016 15:15:05 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/post/aaron/</guid>
+      <description>&lt;p&gt;Test&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
