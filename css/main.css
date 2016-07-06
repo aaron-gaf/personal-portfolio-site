@@ -2881,6 +2881,11 @@
 				font-size: 1.35em;
 			}
 
+			/* I turned down the alpha on mobile (smaller devices) because the container takes up more space */
+			.container {
+				background-color: rgba(255, 255, 255, 0.25) !important;
+			}
+
 		/* Main */
 
 			.main .container {
@@ -2937,6 +2942,11 @@
 
 			html, body {
 				min-width: 320px;
+			}
+			
+			/* I turned down the alpha on mobile (smaller devices) because the container takes up more space */
+			.container {
+				background-color: rgba(255, 255, 255, 0.25) !important;
 			}
 
 		/* List */
