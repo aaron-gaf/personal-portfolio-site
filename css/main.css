@@ -20,6 +20,7 @@
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
+		background-color: rgba(255, 255, 255, 0.65)
 	}
 
 	body {
@@ -3035,4 +3036,11 @@
 					padding: 0;
 				}
 
+	}
+
+	/* My CSS (Aaron Gaffney's) */
+	.oceanfloor {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
 	}
