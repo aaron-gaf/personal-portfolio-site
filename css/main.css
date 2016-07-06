@@ -1822,7 +1822,8 @@
 			color: #454d50;
 			content: '\f1ce';
 			cursor: default;
-			display: block;
+			/* I didn't want this to display for my own reasons */
+			display: none;
 			font-size: 2em;
 			height: 2em;
 			left: 50%;
@@ -1833,7 +1834,7 @@
 			text-align: center;
 			top: 50%;
 			width: 2em;
-			z-index: -1;
+			z-index: -999;
 		}
 
 		html body:after {
@@ -1842,6 +1843,7 @@
 			-ms-animation: overlay-hide 1s ease-in forwards !important;
 			animation: overlay-hide 1s ease-in forwards !important;
 			content: '';
+			/* I didn't want this to display for my own reasons */
 			display: none;
 			height: 100%;
 			left: 0;
