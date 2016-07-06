@@ -3040,7 +3040,8 @@
 
 	/* My CSS (Aaron Gaffney's) */
 	.oceanfloor {
-		position: fixed;
+		position: static;
 		bottom: 0px;
 		width: 100%;
+		z-index: -1;
 	}
