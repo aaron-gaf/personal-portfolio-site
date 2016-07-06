@@ -1842,14 +1842,14 @@
 			-ms-animation: overlay-hide 1s ease-in forwards !important;
 			animation: overlay-hide 1s ease-in forwards !important;
 			content: '';
-			display: block;
+			display: none;
 			height: 100%;
 			left: 0;
 			opacity: 0;
 			position: fixed;
 			top: 0;
 			width: 100%;
-			z-index: -1;
+			z-index: -999;
 		}
 
 	html.is-loading body:before {
