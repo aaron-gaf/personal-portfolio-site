@@ -1362,13 +1362,13 @@
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: darkturquoise;
+		color: chartreuse;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			color: darkturquoise !important;
+			color: chartreuse !important;
 			text-decoration: none;
 		}
 
