@@ -1841,7 +1841,6 @@
 			-webkit-animation: overlay-hide 1s ease-in forwards !important;
 			-ms-animation: overlay-hide 1s ease-in forwards !important;
 			animation: overlay-hide 1s ease-in forwards !important;
-			background: #313a3d;
 			content: '';
 			display: block;
 			height: 100%;
