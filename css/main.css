@@ -24,11 +24,11 @@
 
 	body {
 		line-height: 1;
-		background: cyan; /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(cyan, teal); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(cyan, teal); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(cyan, teal); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(cyan, teal); /* Standard syntax */
+		background: deepskyblue; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(deepskyblue, midnightblue); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(deepskyblue, midnightblue); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(deepskyblue, midnightblue); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(deepskyblue, midnightblue); /* Standard syntax */
 	}
 
 	ol, ul {
