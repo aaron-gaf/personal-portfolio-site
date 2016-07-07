@@ -23,7 +23,7 @@ function check_if_in_view() {
     
     var elClass = $element.attr('class');
     
-    if (inView(elClass)) {
+    if (hasInViewClass(elClass)) {
       var id = $element.attr('id');
       if (id === 'animationelement1') {
         $element.velocity({
@@ -38,11 +38,15 @@ function check_if_in_view() {
               translateX: -5
             });
             movedLeft = true;
+            console.log("moved left");
           } else {
+            $element.velocity({
               translateX: 5
+            });
             movedLeft = false;
+            console.log("moved right");
           }
-        }, 2000);
+        }, 1750);
       } else if (id === 'animationelement2') {
         
       } else if (id === 'animationelement3') {
@@ -54,7 +58,7 @@ function check_if_in_view() {
   });
 }
 
-function inView(classStr) {
+function hasInViewClass(classStr) {
   return classStr.indexOf('in-view') != -1;
 }
 
