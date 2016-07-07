@@ -2,7 +2,7 @@ requirejs.config({
 	    //By default load any module IDs from js/lib
 	    baseUrl: 'js/lib'
 	});
-requirejs(['jquery'], function ($) {
+requirejs(['jquery.min'], function ($) {
 	    //jquery is loaded and can be used here now.
 });
 
