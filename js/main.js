@@ -10,7 +10,6 @@ requirejs.config({
         // js/lib/jquery.min.js, relative to
         // the HTML page.
         // SIDENOTE: I've never used RequireJS before, so hopefully this works
-        $: 'jquery.min',
         jquery: 'jquery.min',
         skel: 'skel.min',
         animationgsap: 'animation.gsap',
@@ -20,7 +19,7 @@ requirejs.config({
         TweenMax: 'TweenMax.min'
     }
 });
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function() {
 	/*
 		Highlights by HTML5 UP
 		html5up.net | @n33co
