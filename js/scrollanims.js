@@ -1,66 +1,18 @@
-// Aside from the custom animations, the code for this is from https://www.sitepoint.com/scroll-based-animations-jquery-css3/
-var $animation_elements = $('.animation-element');
-var $window = $(window);
-
-function check_if_in_view() {
-  var window_height = $window.height();
-  var window_top_position = $window.scrollTop();
-  var window_bottom_position = (window_top_position + window_height);
- 
-  $.each($animation_elements, function() {
-    var $element = $(this);
-    var element_height = $element.outerHeight();
-    var element_top_position = $element.offset().top;
-    var element_bottom_position = (element_top_position + element_height);
- 
-    //check to see if this current container is within viewport
-    if ((element_bottom_position >= window_top_position) &&
-        (element_top_position <= window_bottom_position)) {
-      $element.addClass('in-view');
-    } else {
-      $element.removeClass('in-view');
-    }
-    
-    var elClass = $element.attr('class');
-    
-    if (hasInViewClass(elClass)) {
-      var id = $element.attr('id');
-      if (id === 'animationelement1') {
-        $element.velocity({
-          p: { 
-            opacity: 1,
-          }
-        });
-        setInterval(function() {
-          var movedLeft = false;
-          if (!movedLeft) {
-            $element.velocity({
-              translateX: -5
-            });
-            movedLeft = true;
-            console.log("moved left");
-          } else {
-            $element.velocity({
-              translateX: 5
-            });
-            movedLeft = false;
-            console.log("moved right");
-          }
-        }, 1750);
-      } else if (id === 'animationelement2') {
-        
-      } else if (id === 'animationelement3') {
-        
-      } else if (id === 'animationelement4') {
-        
-      }
-    }
+// Wait for the DOM to be ready
+$(function() {
+  var controller = new ScrollMagic.Controller();
+  var tweenAnim1 = TweenMax.fromTo('#animationelement1', 0.5, {
+    x: "50%",
+    y: "15%"
+  },
+  {
+    left:-10,
+    right: 10,
+    repeat: -1
   });
-}
-
-function hasInViewClass(classStr) {
-  return classStr.indexOf('in-view') != -1;
-}
-
-$window.on('scroll resize', check_if_in_view);
-$window.trigger('scroll');
+  
+  new ScrollMagic.scene({
+    offset: 25,
+    duration: 250
+  }).setTween(tweenAnim1).addTo(controller);
+});
