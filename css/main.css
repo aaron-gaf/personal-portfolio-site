@@ -3056,8 +3056,7 @@
 	}
 	
 	#animationelement1 {
-		background: url("images/ocean/{{ with .Site.Params.animationelement1.picture }}{{ . }}{{ end }}");
-		background-repeat: repeat-x;
+		background: url("images/ocean/waves.png") repeat-x;
 		height: 100%;
 		width: 100%;
 	}
