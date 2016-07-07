@@ -11,7 +11,7 @@ $(function() {
     repeat: -1
   });
   
-  var scene1 = new ScrollScene({
+  var scene1 = new ScrollMagic.Scene({
     offset: 25,
     duration: 250
   }).setTween(tweenAnim1).addTo(controller);
