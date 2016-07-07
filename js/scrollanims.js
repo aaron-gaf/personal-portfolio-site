@@ -26,7 +26,13 @@ function check_if_in_view() {
     if (inView(elClass)) {
       var id = $element.attr('id');
       if (id === 'animationelement1') {
-        
+        $element.velocity({
+          p: { 
+            opacity: 1,
+            translateX: 1
+          },
+          o: { loop: true }
+        }); 
       } else if (id === 'animationelement2') {
         
       } else if (id === 'animationelement3') {
