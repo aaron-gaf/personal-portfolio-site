@@ -1,7 +1,8 @@
 $(document).ready(function () {
 	requirejs.config({
-		    //By default load any module IDs from js/lib
-		    baseUrl: 'js/lib'
+		    //By default load any module IDs from js/lib & js/app
+		    baseUrl: 'js/lib',
+		    baseUrl: 'js/app'
 	});
 	
 	/*
