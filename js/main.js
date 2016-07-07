@@ -1,10 +1,25 @@
+requirejs.config({
+    baseUrl: 'js/lib',
+    paths: {
+        // the left side is the module ID,
+        // the right side is the path to
+        // the jQuery file, relative to baseUrl.
+        // Also, the path should NOT include
+        // the '.js' file extension. This example
+        // is using jQuery located at
+        // js/lib/jquery.min.js, relative to
+        // the HTML page.
+        // I've never used RequireJS before, so hopefully this works
+        jquery: 'jquery.min',
+        skel: 'skel.min',
+        animationgsap: 'animation.gsap',
+        jqueryscrollexmin: 'jquery.scrollex.min',
+        jqueryscrollymin: 'jquery.scrolly.min',
+        ScrollMagic: 'ScrollMagic.min',
+        TweenMax: 'TweenMax.min'
+    }
+});
 $(document).ready(function () {
-	requirejs.config({
-		    //By default load any module IDs from js/lib & js/app
-		    baseUrl: 'js/lib',
-		    baseUrl: 'js/app'
-	});
-	
 	/*
 		Highlights by HTML5 UP
 		html5up.net | @n33co
