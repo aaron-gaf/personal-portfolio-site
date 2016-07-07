@@ -3056,8 +3056,10 @@
 	}
 	
 	#animationelement1 {
+		background: url("images/ocean/{{ with .Site.Params.animationelement1.picture }}{{ . }}{{ end }}");
 		background-repeat: repeat-x;
-		top: 10%;
+		height: 100%;
+		width: 100%;
 	}
 	
 	.inview {
