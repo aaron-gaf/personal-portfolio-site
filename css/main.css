@@ -3048,6 +3048,16 @@
 	}
 
 	/* My CSS (Aaron Gaffney's) */
+	.animationscontainer {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.inview {
+		position: absolute;
+	}
+	
 	.oceanfloorcontainer {
 		position: relative;
 		width: 100%;

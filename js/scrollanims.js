@@ -20,7 +20,26 @@ function check_if_in_view() {
     } else {
       $element.removeClass('in-view');
     }
+    
+    var elClass = $element.attr('class');
+    
+    if (inView(elClass)) {
+      var id = $element.attr('id');
+      if (id === 'animationelement1') {
+        
+      } else if (id === 'animationelement2') {
+        
+      } else if (id === 'animationelement3') {
+        
+      } else if (id === 'animationelement4') {
+        
+      }
+    }
   });
+}
+
+function inView(classStr) {
+  return classStr.indexOf('in-view') != -1;
 }
 
 $window.on('scroll resize', check_if_in_view);
