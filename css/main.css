@@ -3049,6 +3049,7 @@
 
 	/* My CSS (Aaron Gaffney's) */
 	.animationscontainer {
+		z-index: -1;
 		position: relative;
 		width: 100%;
 		height: 100%;
