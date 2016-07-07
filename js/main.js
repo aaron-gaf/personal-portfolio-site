@@ -9,7 +9,8 @@ requirejs.config({
         // is using jQuery located at
         // js/lib/jquery.min.js, relative to
         // the HTML page.
-        // I've never used RequireJS before, so hopefully this works
+        // SIDENOTE: I've never used RequireJS before, so hopefully this works
+        $: 'jquery.min',
         jquery: 'jquery.min',
         skel: 'skel.min',
         animationgsap: 'animation.gsap',
@@ -19,7 +20,6 @@ requirejs.config({
         TweenMax: 'TweenMax.min'
     }
 });
-define(['jquery'], function ($) {});
 $(document).ready(function () {
 	/*
 		Highlights by HTML5 UP
