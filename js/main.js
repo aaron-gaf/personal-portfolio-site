@@ -12,9 +12,9 @@ requirejs.config({
         // SIDENOTE: I've never used RequireJS before, so hopefully this works
         jquery: 'jquery.min',
         skel: 'skel.min',
-        animationgsap: 'animation.gsap',
-        jqueryscrollexmin: 'jquery.scrollex.min',
-        jqueryscrollymin: 'jquery.scrolly.min',
+        'animation.gsap': 'animation.gsap',
+        'jquery.scrollex.min': 'jquery.scrollex.min',
+        'jquery.scrolly.min': 'jquery.scrolly.min',
         ScrollMagic: 'ScrollMagic.min',
         TweenMax: 'TweenMax.min'
     }
