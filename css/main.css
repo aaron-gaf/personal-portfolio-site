@@ -2035,7 +2035,7 @@
 		margin-right: -2em;
 		opacity: 0;
 		width: 1em;
-		z-index: -1;
+		z-index: 100;
 	}
 
 		input[type="checkbox"] + label,
@@ -2614,7 +2614,7 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: -1;
+		z-index: 100;
 	}
 
 		.main-bg.active {
