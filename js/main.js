@@ -19,6 +19,7 @@ requirejs.config({
         TweenMax: 'TweenMax.min'
     }
 });
+define(['jquery'], function ($) {});
 $(document).ready(function () {
 	/*
 		Highlights by HTML5 UP
