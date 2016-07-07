@@ -10,7 +10,7 @@ requirejs.config({
         // js/lib/jquery.min.js, relative to
         // the HTML page.
         // SIDENOTE: I've never used RequireJS before, so hopefully this works
-        jquery: 'jquery.min',
+        'jquery.min': 'jquery.min',
         skel: 'skel.min',
         'animation.gsap': 'animation.gsap',
         'jquery.scrollex.min': 'jquery.scrollex.min',
