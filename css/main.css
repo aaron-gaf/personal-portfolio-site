@@ -3048,9 +3048,15 @@
 	}
 
 	/* My CSS (Aaron Gaffney's) */
+	.oceanfloorcontainer {
+		position: relative;
+		width: 100%;
+	}
+	
 	.oceanfloor {
 		position: absolute;
+		left: 0;
 		bottom: 0;
-		width: 100%;
+		width: inherit;
 		z-index: -1;
 	}
