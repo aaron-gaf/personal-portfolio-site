@@ -1822,8 +1822,7 @@
 			color: #454d50;
 			content: '\f1ce';
 			cursor: default;
-			/* I didn't want this to display for my own reasons */
-			display: none;
+			display: block;
 			font-size: 2em;
 			height: 2em;
 			left: 50%;
@@ -1843,8 +1842,7 @@
 			-ms-animation: overlay-hide 1s ease-in forwards !important;
 			animation: overlay-hide 1s ease-in forwards !important;
 			content: '';
-			/* I didn't want this to display for my own reasons */
-			display: none;
+			display: block;
 			height: 100%;
 			left: 0;
 			opacity: 0;
@@ -3051,8 +3049,8 @@
 
 	/* My CSS (Aaron Gaffney's) */
 	.oceanfloor {
-		position: static;
-		bottom: 0px;
+		position: absolute;
+		bottom: 0;
 		width: 100%;
 		z-index: -1;
 	}
