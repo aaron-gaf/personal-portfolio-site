@@ -29,10 +29,20 @@ function check_if_in_view() {
         $element.velocity({
           p: { 
             opacity: 1,
-            translateX: 1
-          },
-          o: { loop: true }
-        }); 
+          }
+        });
+        setInterval(function() {
+          var movedLeft = false;
+          if (!movedLeft) {
+            $element.velocity({
+              translateX: -5
+            });
+            movedLeft = true;
+          } else {
+              translateX: 5
+            movedLeft = false;
+          }
+        }, 2000);
       } else if (id === 'animationelement2') {
         
       } else if (id === 'animationelement3') {
