@@ -1,3 +1,11 @@
+requirejs.config({
+	    //By default load any module IDs from js/lib
+	    baseUrl: 'js/lib'
+	});
+requirejs(['jquery'], function ($) {
+	    //jquery is loaded and can be used here now.
+});
+
 /*
 	Highlights by HTML5 UP
 	html5up.net | @n33co
@@ -5,7 +13,6 @@
 */
 
 (function($) {
-
 	skel.breakpoints({
 		large: '(max-width: 1680px)',
 		medium: '(max-width: 980px)',
